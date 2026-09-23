@@ -74,14 +74,13 @@ while True:
 
             else:
                 print("Student not found.")
-        
         case "4":
             print("\nDelete student:")
             student_id = int(input("Enter the student ID to delete: "))
-            for student in students:
-                if student['identity'][0] == student_id:
-                    students.remove(student)
-                    del student
+
+            for i in range(len(students)):
+                if students[i]['identity'][0] == student_id:
+                    del students[i]
                     print("\nStudent deleted successfully!")
                     break
             else:
