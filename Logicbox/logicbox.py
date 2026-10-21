@@ -23,21 +23,39 @@ while True:
             match choice_pattern:
                 case 1:
                     for i in range(rows):
-                        print("* " * rows)  
+                        for j in range(rows):
+                            print("*", end=" ")
+                        print()
+
                 case 2:
                     for i in range(1, rows + 1):
-                        print("* " * i)
+                        for j in range(i):
+                            print("*", end=" ")
+                        print()
+
                 case 3:
                     for i in range(1, rows + 1):
-                        print(str(i) * i)
+                        for j in range(i):
+                            print(i, end="")
+                        print()
+
                 case 4:
                     for i in range(1, rows + 1):
-                        print(" ".join(str(j) for j in range(1, i + 1)))
+                        for j in range(1, i + 1):
+                            print(j, end=" ")
+                        print()
+
                 case 5:
                     for i in range(1, rows + 1):
-                        print(" " * (rows - i) + "* " * i)
+                        for j in range(rows - i):
+                            print(" ", end="")
+                        for j in range(i):
+                            print("* ", end="")
+                        print()
+
                 case _:
                     print("Invalid pattern choice.")
+
         case 2:
             start = int(input("\nEnter the start of the range: "))
             end = int(input("Enter the end of the range: "))
