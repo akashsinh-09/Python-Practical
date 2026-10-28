@@ -1,4 +1,4 @@
-# Student Data Organization
+# Collection Manipulator 
 
 A simple Python console-based project for managing student information.
 
