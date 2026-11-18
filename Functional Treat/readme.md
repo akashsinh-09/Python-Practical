@@ -73,7 +73,7 @@ The following screenshots demonstrate the working of the Data Analyzer and Trans
 
 ### 5. Sort Data
 
-![Sort Data](screenshots/sorting.png)
+![Sort Data](screenshots/sort-data.png)
 
 ### 6. Dataset Statistics
 
